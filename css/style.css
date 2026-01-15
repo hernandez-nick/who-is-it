@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Permanent Marker', Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.screen {
+    background: white;
+    border-radius: 25px;
+    padding: 75px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
