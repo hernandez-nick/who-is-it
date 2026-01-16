@@ -27,7 +27,22 @@ const finalScoreEl = document.getElementById("final-score");
 
 
 /*-------------- Functions -------------*/
+function init() {
+    score = 0;
+    level = 1;
+    startScreen.classList.add("hidden");
+    gameScreen.classList.remove("hidden");
 
+    console.log("Game started!");
+    
+}
 
+function handleCategorySelection(event) {
+    selectedCategory = event.target.dataset.category;
+    console.log(`Selected category: ${selectedCategory}`);
+    init();
+}
 /*----------- Event Listeners ----------*/
-
+categoryBtns.forEach(btn => {
+    btn.addEventListener("click", handleCategorySelection);
+});
