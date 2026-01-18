@@ -96,8 +96,7 @@ function checkAnswer(playerGuess, correctAnswer, displayAnswer) {
     }
 
     setTimeout(() => {
-        if (level >= 20) {
-            console.log("Game over!");
+        if (level >= 20) {endGame();
         } else {
             level++;
             displayQuestion();
@@ -113,6 +112,28 @@ function shuffleArray(array) {
     }
     return newArray;
 }
+
+function endGame() {
+    gameScreen.classList.add("hidden");
+    endScreen.classList.remove("hidden");
+    finalScoreEl.textContent = `Your final score is: ${score} / 20`;
+}
+
+function resetGame() {
+    score = 0;
+    level = 1;
+    const categoryKey = selectedCategory.toLowerCase();
+    gameQuestions = shuffleArray(gameData[categoryKey]).slice(0, 20);
+    endScreen.classList.add("hidden");
+    gameScreen.classList.remove("hidden");
+    displayQuestion();
+}
+
+function chooseCategory() {
+    endScreen.classList.add("hidden");
+    startScreen.classList.remove("hidden");
+}
+
 /*----------- Event Listeners ----------*/
 categoryBtns.forEach(btn => {
     btn.addEventListener("click", handleCategorySelection);
@@ -125,3 +146,6 @@ answerInput.addEventListener("keypress", function(event) {
         handleSubmit();
     }
 });
+
+playAgainBtn.addEventListener("click", resetGame);
+chooseCategoryBtn.addEventListener("click", chooseCategory);

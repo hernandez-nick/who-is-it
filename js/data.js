@@ -22,13 +22,50 @@ const gameData = {
         { src: "images/athletes/yoshinobuyamamoto.png", answer: "yoshinobu yamamoto" },
     ],
 
-    // actors: [
-    //     { src: "images/actors/", answer: "" },
+    actors: [
+        { src: "images/actors/adamsandler.png", answer: "adam sandler" },
+        { src: "images/actors/bradpitt.png", answer: "brad pitt" },
+        { src: "images/actors/denzelwashington.jpg", answer: "denzel washington" },
+        { src: "images/actors/dwaynejohnson.jpg", answer: "dwayne johnson" },
+        { src: "images/actors/jackblack.jpg", answer: "jack black" },
+        { src: "images/actors/jamieleecurtis.webp", answer: "jamie lee curtis" },
+        { src: "images/actors/jasonstatham.jpg", answer: "jason statham" },
+        { src: "images/actors/jenniferlawrence.jpg", answer: "jennifer lawrence" },
+        { src: "images/actors/jimcarrey.jpg", answer: "jim carrey" },
+        { src: "images/actors/keanureeves.jpg", answer: "keanu reeves" },
+        { src: "images/actors/leodicaprio.webp", answer: "leo dicaprio" },
+        { src: "images/actors/margotrobbie.jpg", answer: "margot robbie" },
+        { src: "images/actors/merylstreep.jpg", answer: "meryl streep" },
+        { src: "images/actors/ryangosling.jpg", answer: "ryan gosling" },
+        { src: "images/actors/ryanreynolds.jpg", answer: "ryan reynolds" },
+        { src: "images/actors/scarlettjohansson.jpg", answer: "scarlett johansson" },
+        { src: "images/actors/teyanataylor.webp", answer: "teyana taylor" },
+        { src: "images/actors/timotheechalamet.jpg", answer: "timothee chalamet" },
+        { src: "images/actors/tomhanks.png", answer: "tom hanks" },
+        { src: "images/actors/zendaya.jpg", answer: "zendaya"
+        }    
+    ],
 
-    // ];
-
-    // musicians: [
-    //     { src: "images/musicians/", answer: "" },
-
-    // ];
-}
+    musicians: [
+        { src: "images/musicians/50cent.jpg", answer: "50 cent" },
+        { src: "images/musicians/arianagrande.jpg", answer: "ariana grande" },
+        { src: "images/musicians/badbunny.png", answer: "bad bunny" },
+        { src: "images/musicians/beyonce.jpg", answer: "beyonce" },
+        { src: "images/musicians/billieeilish.jpg", answer: "billie eilish" },
+        { src: "images/musicians/brunomars.jpg", answer: "bruno mars" },
+        { src: "images/musicians/chrisbrown.jpg", answer: "chris brown" },
+        { src: "images/musicians/drake.png", answer: "drake" },
+        { src: "images/musicians/eminem.png", answer: "eminem" },
+        { src: "images/musicians/justinbieber.png", answer: "justin bieber" },
+        { src: "images/musicians/kendricklamar.png", answer: "kendrick lamar" },
+        { src: "images/musicians/ladygaga.jpg", answer: "lady gaga" },
+        { src: "images/musicians/morganwallen.png", answer: "morgan wallen" },
+        { src: "images/musicians/postmalone.png", answer: "post malone" },
+        { src: "images/musicians/rihanna.png", answer: "rihanna" },
+        { src: "images/musicians/sabrinacarpenter.jpg", answer: "sabrina carpenter" },
+        { src: "images/musicians/sza.png", answer: "sza" },
+        { src: "images/musicians/taylorswift.jpg", answer: "taylor swift" },
+        { src: "images/musicians/theweeknd.jpg", answer: "the weeknd" },
+        { src: "images/musicians/tylerthecreator.jpg", answer: "tyler the creator" },
+    ]
+};
