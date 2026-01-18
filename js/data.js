@@ -1,23 +1,34 @@
 const gameData = {
     athletes: [
-        { image: "images/athletes/alex pereira.png", answer: "alex pereira" },
-        { image: "images/athletes/caitlin clark.png", answer: "caitlin clark" },
-        { image: "images/athletes/cristiano ronaldo.jpg", answer: "cristiano ronaldo" },
-        { image: "images/athletes/fernando mendoza.png", answer: "fernando mendoza" },
-        { image: "images/athletes/ilia topuria.png", answer: "ilia topuria" },
-        { image: "images/athletes/josh allen.png", answer: "josh allen" },
-        { image: "images/athletes/justin jefferson.png", answer: "justin jefferson" },
-        { image: "images/athletes/kevin durant.png", answer: "kevin durant" },
-        { image: "images/athletes/lamar jackson.png", answer: "lamar jackson" },
-        { image: "images/athletes/lando norris.png", answer: "lando norris" },
-        { image: "images/athletes/lebron james.png", answer: "lebron james" },
-        { image: "images/athletes/lionel messi.png", answer: "lionel messi" },
-        { image: "images/athletes/max verstappen.jpg", answer: "max verstappen" },
-        { image: "images/athletes/roger federer.png", answer: "roger federer" },
-        { image: "images/athletes/scottie scheffler.webp", answer: "scottie scheffler" },
-        { image: "images/athletes/serena williams.png", answer: "serena williams" },
-        { image: "images/athletes/shohei ohtani.png", answer: "shohei ohtani" },
-        { image: "images/athletes/simone biles.webp", answer: "simone biles" },
-        { image: "images/athletes/stephen curry.png", answer: "stephen curry" },
-        { image: "images/athletes/yoshinobu yamamoto.png", answer: "yoshinobu yamamoto" },
-    ],};
+        { src: "images/athletes/alexpereira.png", answer: "alex pereira" },
+        { src: "images/athletes/caitlinclark.png", answer: "caitlin clark" },
+        { src: "images/athletes/cristianoronaldo.jpg", answer: "cristiano ronaldo" },
+        { src: "images/athletes/fernandomendoza.png", answer: "fernando mendoza" },
+        { src: "images/athletes/iliatopuria.png", answer: "ilia topuria" },
+        { src: "images/athletes/joshallen.png", answer: "josh allen" },
+        { src: "images/athletes/justinjefferson.png", answer: "justin jefferson" },
+        { src: "images/athletes/kevindurant.png", answer: "kevin durant" },
+        { src: "images/athletes/lamarjackson.png", answer: "lamar jackson" },
+        { src: "images/athletes/landonorris.png", answer: "lando norris" },
+        { src: "images/athletes/lebronjames.png", answer: "lebron james" },
+        { src: "images/athletes/lionelmessi.png", answer: "lionel messi" },
+        { src: "images/athletes/maxverstappen.jpg", answer: "max verstappen" },
+        { src: "images/athletes/rogerfederer.png", answer: "roger federer" },
+        { src: "images/athletes/scottiescheffler.webp", answer: "scottie scheffler" },
+        { src: "images/athletes/serenawilliams.png", answer: "serena williams" },
+        { src: "images/athletes/shoheiohtani.png", answer: "shohei ohtani" },
+        { src: "images/athletes/simonebiles.webp", answer: "simone biles" },
+        { src: "images/athletes/stephencurry.png", answer: "stephen curry" },
+        { src: "images/athletes/yoshinobuyamamoto.png", answer: "yoshinobu yamamoto" },
+    ],
+
+    // actors: [
+    //     { src: "images/actors/", answer: "" },
+
+    // ];
+
+    // musicians: [
+    //     { src: "images/musicians/", answer: "" },
+
+    // ];
+}
