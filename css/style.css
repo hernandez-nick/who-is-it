@@ -33,6 +33,12 @@ h1 {
     color: darkred;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: darkred;
+}
+
 p {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -61,6 +67,15 @@ p {
     transform: translateY(-5px);
 }
 
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: darkred;
+}
+
 .input-area {
     display: flex;
     gap: 1rem;
@@ -76,6 +91,10 @@ p {
     outline: none;
 }
 
+#answer-input:focus {
+    border-color: dodgerblue;
+}
+
 #submit-btn {
     background: darkred;
     color: white;
@@ -86,6 +105,37 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
+}
+
+#submit-btn:hover {
+    transform: scale(1.05);
+}
+
+#feedback {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 1.5rem;
+    color: darkred;
+    font-weight: bold;
+}
+
+.end-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#play-again-btn, #choose-category-btn {
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
 }
 
 .image-box {
@@ -106,4 +156,10 @@ p {
     width: auto;
     height: auto;
     object-fit: contain;
+}
+
+#final-score {
+    font-size: 1.75rem;
+    color: darkred;
+    font-weight: bold;
 }

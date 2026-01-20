@@ -35,6 +35,7 @@ function init() {
     level = 1;
     startScreen.classList.add("hidden");
     gameScreen.classList.remove("hidden");
+    startSound.loop = true;
     startSound.play();
     displayQuestion();
 }
@@ -43,7 +44,7 @@ function handleCategorySelection(event) {
     selectedCategory = event.target.dataset.category;
     console.log(`Selected category: ${selectedCategory}`);
     
-    // Load and shuffle questions for the selected category
+
     const categoryKey = selectedCategory.toLowerCase();
     if (gameData[categoryKey]) {
         gameQuestions = shuffleArray(gameData[categoryKey]).slice(0, 20);
@@ -116,7 +117,7 @@ function shuffleArray(array) {
 function endGame() {
     gameScreen.classList.add("hidden");
     endScreen.classList.remove("hidden");
-    finalScoreEl.textContent = `Your final score is: ${score} / 20`;
+    finalScoreEl.textContent = `Your final score is: ${score}/20`;
 }
 
 function resetGame() {
