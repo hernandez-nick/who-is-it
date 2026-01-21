@@ -4,7 +4,7 @@
 
 ## Description
 
-**"Who Is It?"** is a single player trivia game. The player guesses the name of a famous person shown in an image. Categories include athletes, musicians, and actors or actresses. There are a total of 20 questions per category worth 1 points each. If the player gets 7 questions wrong, the game ends. If the player reaches level 20, the game ends and the player can choose to play again or choose a different category.
+**"Who Is It?"** is a single player trivia game. The player guesses the name of a famous person shown in an image. Categories include athletes, musicians, and actors or actresses. There are a total of 20 questions per category worth 1 point each. If the player gets 7 questions wrong, the game ends. If the player reaches level 20, the game ends and the player can choose to play again or choose a different category.
 
 ## Getting Started
 
@@ -17,7 +17,19 @@
 * CSS3
 * JavaScript
 
+## Attributions
+
+[Mixkit](https://mixkit.co/)
+
+[Google Images](https://www.google.com/imghp?hl=en&authuser=0&ogbl)
+
+[W3](https://www.w3schools.com/)
+
+[MDN](https://developer.mozilla.org/en-US/)
+
+
 ## Next steps
 
 I would like to add more categories and animations to make the UI/UX look better.
+I want to fix the images to not show the transparent squares.
 
