@@ -54,7 +54,7 @@ Restart:
 ## Getting Started
 
 [GitHub](https://github.com/hernandez-nick/who-is-it)
-
+[Deployed project link](https://hernandez-nick.github.io/who-is-it/)
 
 ## Technologies Used
 
