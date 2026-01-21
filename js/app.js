@@ -7,6 +7,7 @@ const wrongSound = new Audio("audio/wrong.wav");
 /*---------- Variables (state) ---------*/
 let score;
 let level;
+let wrongAnswers;
 let selectedCategory;
 let gameQuestions = [];
 
@@ -33,9 +34,11 @@ const finalScoreEl = document.getElementById("final-score");
 function init() {
     score = 0;
     level = 1;
+    wrongAnswers = 0;
     startScreen.classList.add("hidden");
     gameScreen.classList.remove("hidden");
     startSound.loop = true;
+    startSound.volume = 0.1;
     startSound.play();
     displayQuestion();
 }
@@ -85,18 +88,24 @@ function handleSubmit() {
 
 function checkAnswer(playerGuess, correctAnswer, displayAnswer) {
     if (playerGuess === correctAnswer) {
+        correctSound.volume = 0.15;
         correctSound.play();
         score++;
         feedbackEl.textContent = "Correct!";
         feedbackEl.style.color = "green";
 
     } else {
+        wrongSound.volume = 0.15;
         wrongSound.play();
+        wrongAnswers++;
         feedbackEl.textContent = `Wrong! It was: ${displayAnswer}`;
         feedbackEl.style.color = "red";
     }
 
     setTimeout(() => {
+        if (wrongAnswers > 7) {
+            endGame();
+        } else
         if (level >= 20) {endGame();
         } else {
             level++;
@@ -117,12 +126,18 @@ function shuffleArray(array) {
 function endGame() {
     gameScreen.classList.add("hidden");
     endScreen.classList.remove("hidden");
-    finalScoreEl.textContent = `Your final score is: ${score}/20`;
+    
+    if (wrongAnswers > 7) {
+        finalScoreEl.textContent = `Game Over! You missed too many. Final score: ${score}/20`;
+    } else {
+        finalScoreEl.textContent = `You Win! Final score: ${score}/20`;
+    }
 }
 
 function resetGame() {
     score = 0;
     level = 1;
+    wrongAnswers = 0;
     const categoryKey = selectedCategory.toLowerCase();
     gameQuestions = shuffleArray(gameData[categoryKey]).slice(0, 20);
     endScreen.classList.add("hidden");

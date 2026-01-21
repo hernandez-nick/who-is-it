@@ -12,6 +12,7 @@ body {
     padding: 20px;
     font-family: 'Permanent Marker', Verdana, sans-serif;
     min-height: 100vh;
+    font-weight: bold;
 }
 
 .screen {
